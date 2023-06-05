@@ -3,4 +3,4 @@
 
 ---
 #### Todo
-- [ ] Linked List
+- [x] Linked List

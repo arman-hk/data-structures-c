@@ -53,3 +53,24 @@ void printList(Node* head) {
     }
     printf("\n");
 }
+
+int main() {
+    // an empty list
+    Node* head = NULL;
+
+    // insert at head
+    head = insertAtHead(head, 5);
+    head = insertAtHead(head, 10);
+    head = insertAtHead(head, 15);
+
+    // print list
+    printList(head);
+
+    // delete node=10
+    deleteNode(&head, 10);
+
+    // print list
+    printList(head);
+
+    return 0;
+}
