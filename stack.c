@@ -26,6 +26,11 @@ int pop(Stack* stack) {
     return item;
 }
 
+int isEmpty(Stack* stack) {
+    return stack->top == -1;
+}
+
+
 int main() {
     // init an empty stack
     Stack stack;
@@ -36,10 +41,9 @@ int main() {
     push(&stack, 10);
     push(&stack, 15);
 
-    // pop elements and print
-    printf("%d\n", pop(&stack));
-    printf("%d\n", pop(&stack));
-    printf("%d\n", pop(&stack));
-
+    while (!isEmpty(&stack)) {
+        printf("%d\n", pop(&stack));
+    }
+    
     return 0;
 }

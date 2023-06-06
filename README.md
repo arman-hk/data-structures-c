@@ -4,3 +4,4 @@
 ---
 #### Todo
 - [x] Linked List
+- [x] Stack
